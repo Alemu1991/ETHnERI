@@ -1,0 +1,8 @@
+{
+  "appId": "com.habeshan.dating",
+  "appName": "Habeshan Dating",
+  "webDir": "public",
+  "server": {
+    "androidScheme": "https"
+  }
+}

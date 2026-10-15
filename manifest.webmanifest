@@ -1,0 +1,9 @@
+{
+  "name": "Habeshan Dating",
+  "short_name": "Habeshan Dating",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#17151a",
+  "theme_color": "#7d1830",
+  "description": "18+ dating, matching and community connections for the Habesha community."
+}

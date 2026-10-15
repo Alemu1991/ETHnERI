@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: habeshan-dating
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: BASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: habeshan-dating-db
+          property: connectionString
+  - type: pserv
+    name: habeshan-dating-db
+    plan: starter
+    runtime: postgres
+    databaseName: habeshan
+    user: habeshan
